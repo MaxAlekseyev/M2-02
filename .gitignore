@@ -57,6 +57,8 @@ node_modules/
 Working/*
 *.komodoproject
 
+
+# Max A. added
 *.cmd
 *.bak
 *.bak2
