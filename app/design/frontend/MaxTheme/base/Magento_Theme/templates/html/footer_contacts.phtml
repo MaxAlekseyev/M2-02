@@ -1,0 +1,11 @@
+<?php
+
+$storeInfo = \Magento\Framework\App\ObjectManager::getInstance() ->get('Magento\Framework\App\Config\ScopeConfigInterface');
+
+?>
+<div class="footer-contacts">
+
+	<strong>Tel:</strong> <?php echo $storeInfo ->getValue('general/store_information/phone'); ?><br>
+	<strong>Email:</strong> <?php echo $storeInfo ->getValue('contact/email/recipient_email'); ?>
+
+</div>

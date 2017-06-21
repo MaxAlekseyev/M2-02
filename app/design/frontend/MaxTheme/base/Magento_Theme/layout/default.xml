@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<update handle="default_head_blocks" />
+
+	<referenceBlock name="report.bugs" remove="true" />
+	<referenceContainer name="footer_links" remove="true" />
+	<remove src="print.css" />
+	<move element="minicart" destination="header.panel" after="-"/>
+
+	<body>
+
+		<referenceBlock name="logo">
+			<arguments>
+				<argument name="logo_img_width" xsi:type="number">358</argument>
+				<argument name="logo_img_height" xsi:type="number">83</argument>
+			</arguments>
+		</referenceBlock>
+
+		<referenceBlock name="minicart"></referenceBlock>
+
+		<referenceContainer name="footer">
+			<container name="footer-info" htmlTag="div" htmlClass="footer-info" before="-">
+				<block class="Magento\Cms\Block\Block" name="footer-links-block-primary">
+					<arguments>
+						<argument name="block_id" xsi:type="string">footer_links_block</argument>
+					</arguments>
+				</block>
+				<block class="Magento\Cms\Block\Block" name="footer-links-block-secondary">
+					<arguments>
+						<argument name="block_id" xsi:type="string">footer_links_block_secondary</argument>
+					</arguments>
+				</block>
+
+			</container>
+
+			<block class="Magento\Framework\View\Element\Template" name="footer-contacts" template="Magento_Theme::html/footer_contacts.phtml" before="copyright" />
+
+		</referenceContainer>
+
+	</body>
+</page>
