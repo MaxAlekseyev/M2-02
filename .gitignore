@@ -21,7 +21,7 @@ atlassian*
 /lib/internal/flex/varien/.flexLibProperties
 /lib/internal/flex/varien/.project
 /lib/internal/flex/varien/.settings
-/node_modules
+#node_modules/
 /.grunt
 
 /pub/media/*.*
@@ -44,6 +44,7 @@ atlassian*
 /pub/media/captcha/*
 /pub/static/*
 !/pub/static/.htaccess
+node_modules/
 
 /var/*
 !/var/.htaccess
@@ -61,3 +62,5 @@ Working/*
 *.bak2
 *.tmp
 *.tmp2
+*.ai
+*.psd
