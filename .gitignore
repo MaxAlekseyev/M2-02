@@ -67,5 +67,6 @@ Working/*
 *.tif
 *.tiff
 *.xfx
-*.3ds
-*.3fx
+*.bmp
+*.xmp
+*.cooler
