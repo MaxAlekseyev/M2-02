@@ -1,0 +1,48 @@
+& when (@media-common = true) {
+
+.minicart-wrapper {
+
+    .block-minicart {
+        display: block !important;
+        text-align: left;
+        position: absolute;
+        //margin-top: 200px;
+
+        &:before{
+            border: 6px solid;
+            border-color: transparent transparent #ffffff transparent;
+            z-index: 99;
+            //top: 0;
+            right: 20px;
+        }
+
+        &:after{
+            right: 19px;
+        }
+
+    }
+
+    .mage-dropdown-dialog{
+        display: block !important;
+    }
+
+    .minicart-items-wrapper{
+        height: auto !important;
+    }
+
+    .action.close{
+        color: #000;
+
+        &:hover{
+            transform: none;
+        }
+
+        &:before{
+
+        }
+
+    }
+
+}
+
+}

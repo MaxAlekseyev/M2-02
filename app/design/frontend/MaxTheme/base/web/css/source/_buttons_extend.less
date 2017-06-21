@@ -1,0 +1,30 @@
+// Buttons extending
+& when (@media-common = true) {
+
+    button,
+    .action.primary,
+    .cart.table-wrapper .actions-toolbar > .action,
+    .cart.table-wrapper .action-gift,
+    body .block.newsletter .action.subscribe {
+        border-radius: @button__border-radius;
+        //background: @primary-button__background;
+        color: @primary-button__color;
+        border: @button-primary__border;
+        transition: @button-primary__trasition;
+        &:hover {
+            transform: @button-primary__transform;
+            color: @button-primary__hover__color;
+        }
+        a&{
+            &:hover{
+                transform: @button-primary__transform2;
+            }
+        }
+    }isletter .action.subscribe {
+        &:hover {
+            transform: none;
+        }
+    }
+
+}
+

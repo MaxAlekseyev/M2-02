@@ -1,0 +1,47 @@
+& when (@media-common = true) {
+    .columns {
+        .column.main {
+            &.homepage {
+                padding-bottom: 0;
+            }
+        }
+    }
+    .home-banner {
+        img {
+            width: 100%;
+            color: "@{baseDir}";
+        }
+    }
+    .hp-info-blocks {
+        display: inline-block;
+        width: 100%;
+        .hp-info {
+            float: left;
+            width: 49%;
+            &.right {
+                float: right;
+            }
+        }
+        h2 {
+            border: 1px solid #555;
+            background: #ddd;
+            padding: 10px 15px;
+            margin-bottom: 0;
+            .fsz(16);
+            font-weight: 600;
+        }
+        p {
+            border: 1px solid #555;
+            border-top: 0;
+            box-sizing: border-box;
+            padding: 10px 15px;
+        }
+    }
+    .cms-home .nav-sections {
+        //margin-bottom: 0;
+    }
+
+}
+
+
+
